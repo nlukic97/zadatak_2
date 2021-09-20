@@ -1,0 +1,23 @@
+a[class^='btn'] {
+    padding:1rem 2rem;
+    display: inline-block;
+    border-radius: 100px;
+    color: $color-white;
+    text-decoration: none;
+
+    &[class$='-blue'] {
+        background-color: $color-dark-blue;
+        
+        &:hover {
+            background-color: $color-light-blue;
+        }
+    }
+    
+    &[class$='-purple'] {
+        background-color: $color-dark-purple;
+
+        &:hover {
+            background-color: $color-light-purple;
+        }
+    }
+}

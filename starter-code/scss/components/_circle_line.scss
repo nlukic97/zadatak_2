@@ -1,0 +1,26 @@
+.circle-line {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 auto;
+    border: 1px solid $color-gray;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+
+    &:before {
+        content:'';
+        background-color: $color-gray;
+        width: 1px;
+        height: 4rem;
+        position: absolute;
+        top: -4rem;
+        left: calc(50% - 0.5px); //check out how this could be done better
+    }
+
+    &::after {
+        content: attr(data-number);
+        color: $color-gray;
+    }
+}
