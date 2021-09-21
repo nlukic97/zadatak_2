@@ -18,17 +18,20 @@
 .headline-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
 }
-.headline-grid [class^=faces] {
-  height: 100%;
+.headline-grid .faces-1, .headline-grid .faces-2, .headline-grid .headline {
+  padding: 3.25rem 0;
+}
+.headline-grid .faces-1, .headline-grid .faces-2 {
   grid-row: 1;
   display: flex;
   justify-content: space-around;
 }
-.headline-grid [class^=faces][class$="-1"] {
+.headline-grid .faces-1 {
   grid-column: 1;
 }
-.headline-grid [class^=faces][class$="-2"] {
+.headline-grid .faces-2 {
   grid-column: 3;
 }
 .headline-grid .headline {
@@ -121,6 +124,9 @@ a[class^=btn][class$=-purple]:hover {
   margin-bottom: 30px;
 }
 
+.faces-1 {
+  transform: translateX(-3rem);
+}
 .faces-1 .two-faces-component:first-child .face:first-child {
   background: url("../../assets/avatars/1.jpg") no-repeat center center;
 }
@@ -143,6 +149,9 @@ a[class^=btn][class$=-purple]:hover {
   background: url("../../assets/avatars/6.jpg") no-repeat center center;
 }
 
+.faces-2 {
+  transform: translateX(3rem);
+}
 .faces-2 .two-faces-component:first-child .face:first-child {
   background: url("../../assets/avatars/7.jpg") no-repeat center center;
 }
@@ -166,7 +175,7 @@ a[class^=btn][class$=-purple]:hover {
 }
 
 .logo-container {
-  padding: 5rem;
+  padding: 5rem 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

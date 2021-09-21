@@ -12,9 +12,8 @@
 }
 
 .faces-1 {
+    transform: translateX(-3rem);
     .two-faces-component {
-        //transform: translateX(-3rem);
-
         &:first-child {
             .face {
                 &:first-child {background: url('../../assets/avatars/1.jpg') no-repeat center center;}
@@ -23,7 +22,6 @@
         }
         
         &:nth-child(2) {
-            //transform: translateY(-20%) translateX(-3rem); //confirm the number
             transform: translateY(-20%); //confirm the number
 
             .face {
@@ -42,8 +40,8 @@
 }
 
 .faces-2 {
+    transform: translateX(3rem);
     .two-faces-component {
-        //transform: translateX(3rem);
 
         &:first-child {
             .face {
