@@ -75,7 +75,7 @@ a[class^=btn][class$=-purple]:hover {
   width: 1px;
   height: 4rem;
   position: absolute;
-  top: -4rem;
+  top: -135%;
   left: calc(50% - 0.5px);
 }
 .circle-line::after {
