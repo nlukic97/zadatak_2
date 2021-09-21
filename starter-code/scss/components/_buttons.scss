@@ -5,6 +5,7 @@ a[class^='btn'] {
     color: $color-white;
     text-decoration: none;
 
+    //blue button
     &[class$='-blue'] {
         background-color: $color-dark-blue;
         
@@ -13,6 +14,7 @@ a[class^='btn'] {
         }
     }
     
+    //purple button
     &[class$='-purple'] {
         background-color: $color-dark-purple;
 

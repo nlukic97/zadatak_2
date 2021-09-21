@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15rem;   
+    
+    background-image: url('../assets/desktop/image-footer.jpg'); //fallback
+    background-image: linear-gradient(#4d97a9d5, #4d97a9d5), url('../assets/desktop/image-footer.jpg'); //overlay image
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    > div {
+        flex: 1;
+    }
+}

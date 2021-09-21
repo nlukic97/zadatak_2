@@ -7,6 +7,14 @@
   text-align: center;
 }
 
+.color-white {
+  color: #fafafa;
+}
+
+.container {
+  padding: 0 5rem;
+}
+
 .headline-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -14,17 +22,20 @@
 .headline-grid [class^=faces] {
   height: 100%;
   grid-row: 1;
+  display: flex;
+  justify-content: space-around;
 }
 .headline-grid [class^=faces][class$="-1"] {
-  background-color: orange;
   grid-column: 1;
 }
 .headline-grid [class^=faces][class$="-2"] {
-  background-color: pink;
   grid-column: 3;
 }
 .headline-grid .headline {
   grid-row: 1;
+}
+.headline-grid .headline h1 {
+  font-size: 3.5rem;
 }
 
 a[class^=btn] {
@@ -77,11 +88,85 @@ a[class^=btn][class$=-purple]:hover {
   grid-template-rows: 1;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin: 0 100px;
 }
 .user-reel img {
   border-radius: 5px;
   width: 100%;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 15rem;
+  background-image: url("../assets/desktop/image-footer.jpg");
+  background-image: linear-gradient(#4d97a9d5, #4d97a9d5), url("../assets/desktop/image-footer.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.footer > div {
+  flex: 1;
+}
+
+.two-faces-component {
+  display: inline-block;
+}
+.two-faces-component .face {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+}
+.two-faces-component .face:first-child {
+  margin-bottom: 30px;
+}
+
+.faces-1 .two-faces-component:first-child .face:first-child {
+  background: url("../../assets/avatars/1.jpg") no-repeat center center;
+}
+.faces-1 .two-faces-component:first-child .face:nth-child(2) {
+  background: url("../../assets/avatars/2.jpg") no-repeat center center;
+}
+.faces-1 .two-faces-component:nth-child(2) {
+  transform: translateY(-20%);
+}
+.faces-1 .two-faces-component:nth-child(2) .face:first-child {
+  background: url("../../assets/avatars/3.jpg") no-repeat center center;
+}
+.faces-1 .two-faces-component:nth-child(2) .face:nth-child(2) {
+  background: url("../../assets/avatars/4.jpg") no-repeat center center;
+}
+.faces-1 .two-faces-component:nth-child(3) .face:first-child {
+  background: url("../../assets/avatars/5.jpg") no-repeat center center;
+}
+.faces-1 .two-faces-component:nth-child(3) .face:nth-child(2) {
+  background: url("../../assets/avatars/6.jpg") no-repeat center center;
+}
+
+.faces-2 .two-faces-component:first-child .face:first-child {
+  background: url("../../assets/avatars/7.jpg") no-repeat center center;
+}
+.faces-2 .two-faces-component:first-child .face:nth-child(2) {
+  background: url("../../assets/avatars/8.jpg") no-repeat center center;
+}
+.faces-2 .two-faces-component:nth-child(2) {
+  transform: translateY(20%);
+}
+.faces-2 .two-faces-component:nth-child(2) .face:first-child {
+  background: url("../../assets/avatars/9.jpg") no-repeat center center;
+}
+.faces-2 .two-faces-component:nth-child(2) .face:nth-child(2) {
+  background: url("../../assets/avatars/10.jpg") no-repeat center center;
+}
+.faces-2 .two-faces-component:nth-child(3) .face:first-child {
+  background: url("../../assets/avatars/11.jpeg") no-repeat center center;
+}
+.faces-2 .two-faces-component:nth-child(3) .face:nth-child(2) {
+  background: url("../../assets/avatars/12.jpg") no-repeat center center;
+}
+
+.logo-container {
+  padding: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */
