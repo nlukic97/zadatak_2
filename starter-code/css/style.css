@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
 .text-center {
   text-align: center;
 }
@@ -66,9 +70,11 @@
 }
 .headline-grid .headline {
   grid-row: 1;
+  color: #28283d;
 }
 .headline-grid .headline h1 {
-  font-size: 3.5rem;
+  font-size: 4rem;
+  line-height: 4rem;
 }
 
 @media screen and (max-width: 880px) {
