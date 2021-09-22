@@ -1,31 +1,26 @@
 .headline-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr); //2, 1fr
-    //grid-template-rows: repeat(2,1fr);
-
-    border: 1px solid navy;
+    grid-template-columns: repeat(3,1fr);
+    // border: 1px solid navy;
     overflow: hidden;
-    // padding-top: 5%;
+    padding-top: 6%;
     
     .faces-1, .faces-2 {
         grid-row: 1;
-
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        gap: 4%;
-        border: 1px solid red;
-        height: fit-content; //maybe you don't need this
+        gap: 5%;
+        height: fit-content;
         
         .two-faces-component {
-            //height: fit-content; //maybe you don't need this
-            border:1px solid orange;
+            // border:1px solid orange;
 
             .face {
-                width: 100%;
+                width: 90%;
                 border-radius: 50%;
-                
+
                 &:first-child {
-                    // margin-bottom: 10%;
+                    margin-bottom: 10%;
                 }
             }
         }
@@ -33,24 +28,75 @@
     
     .faces-1{
         grid-column: 1;
-        transform: translateX(-10%);
+        margin-left: -10%;
+        padding-right: 2.5%;
         
-        .two-faces-component:nth-child(2){transform: translateY(25%);}
+        .two-faces-component {
+            &:nth-child(1){
+                transform: translateY(0%);
+            }
+            &:nth-child(2){
+                transform: translateY(-25%);
+            }
+            &:nth-child(3){
+                transform: translateY(0%);
+            }
+        }
     }
     
     .faces-2{
-        grid-column: 3; //2
-        transform: translateX(10%);
+        grid-column: 3;
+        margin-right: -10%;
+        padding-left: 2.5%;
         padding-bottom: 20%;
 
-        .two-faces-component:nth-child(2){transform: translateY(25%);}
+        .two-faces-component {           
+            &:nth-child(1){
+                transform: translateY(0%);
+            }
+            &:nth-child(2){
+                transform: translateY(25%);
+            }
+            &:nth-child(3){
+                transform: translateY(0%);
+            }
+        }
     }
     
     .headline {
-        grid-row: 1; //2
+        grid-row: 1;
         
         h1 {
             font-size: 3.5rem;
+        }
+    }
+}
+
+
+@media screen and (max-width:880px) {
+    .headline-grid {
+        grid-template-columns: repeat(2,1fr);
+        padding-top: 9%;
+
+        .faces-2 {
+            grid-column: 2;
+            padding-bottom:0;
+            .two-faces-component {
+                &:nth-child(1){
+                    transform: translateY(-25%);
+                }
+                &:nth-child(2){
+                    transform: translateY(0%);
+                }
+                &:nth-child(3){
+                    transform: translateY(-25%);
+                }
+            }
+        }
+
+        .headline {
+            grid-row: 2;
+            grid-column: 1/3;
         }
     }
 }
