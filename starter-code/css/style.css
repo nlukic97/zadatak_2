@@ -19,6 +19,10 @@ body {
   padding: 0 5rem;
 }
 
+.mtb-4 {
+  margin: 4rem 0;
+}
+
 .headline-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
