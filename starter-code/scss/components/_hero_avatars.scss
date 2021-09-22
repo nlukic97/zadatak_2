@@ -4,26 +4,23 @@
     //grid-template-rows: repeat(2,1fr);
     overflow: hidden;
     
-    .faces-1, .faces-2, .headline{
-        padding: 3.25rem 0;
-    }
-    
     .faces-1, .faces-2 {
         grid-row: 1;
-        display: flex;
-        justify-content: space-around;
+
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 4%;
+        height: fit-content;
         // border: 1px solid red;
         
         .two-faces-component {
-            display: inline-block;
-            
+            height: fit-content; //maybe you don't need this
             .face {
-                width: 7rem;
-                height: 7rem;
+                width: 100%;
                 border-radius: 50%;
                 
                 &:first-child {
-                    margin-bottom: 30px;
+                    margin-bottom: 10%;
                 }
             }
         }
@@ -31,67 +28,28 @@
     
     .faces-1{
         grid-column: 1;
-        transform: translateX(-3rem);
+        transform: translateX(-10%);
         
-        .two-faces-component {
-            &:first-child {
-                .face {
-                    &:first-child {background: url('../../assets/avatars/1.jpg') no-repeat center center;}
-                    &:nth-child(2){background: url('../../assets/avatars/2.jpg') no-repeat center center;}
-                }
-            }
-            
-            &:nth-child(2) {
-                transform: translateY(-20%); //confirm the number
-                
-                .face {
-                    &:first-child {background: url('../../assets/avatars/3.jpg') no-repeat center center;}
-                    &:nth-child(2){background: url('../../assets/avatars/4.jpg') no-repeat center center;}
-                }
-            }
-            
-            &:nth-child(3) {
-                .face {
-                    &:first-child {background: url('../../assets/avatars/5.jpg') no-repeat center center;}
-                    &:nth-child(2){background: url('../../assets/avatars/6.jpg') no-repeat center center;}
-                }
-            }
-        }
+        //check all these again
+        .two-faces-component:nth-child(1){padding-top:$header-padding-1;}
+        .two-faces-component:nth-child(3){padding-top:$header-padding-1;}
     }
     
     .faces-2{
         grid-column: 3; //2
-        
-        transform: translateX(3rem);
-        .two-faces-component {
-            
-            &:first-child {
-                .face {
-                    &:first-child {background: url('../../assets/avatars/7.jpg') no-repeat center center;}
-                    &:nth-child(2){background: url('../../assets/avatars/8.jpg') no-repeat center center;}
-                }
-            }
-            
-            &:nth-child(2) {
-                //transform: translateY(20%) translateX(3rem); //confirm the number
-                transform: translateY(20%); //confirm the number
-                .face {
-                    &:first-child {background: url('../../assets/avatars/9.jpg') no-repeat center center;}
-                    &:nth-child(2){background: url('../../assets/avatars/10.jpg') no-repeat center center;}
-                }
-            }
-            
-            &:nth-child(3) {
-                .face {
-                    &:first-child {background: url('../../assets/avatars/11.jpeg') no-repeat center center;}
-                    &:nth-child(2){background: url('../../assets/avatars/12.jpg') no-repeat center center;}
-                }
-            }
-        }
+        transform: translateX(10%);
+
+        //check all these again
+        .two-faces-component:nth-child(1){padding-top:$header-padding-1;}
+        .two-faces-component:nth-child(2){padding-top:$header-padding-2;}
+        .two-faces-component:nth-child(3){padding-top:$header-padding-1;}
     }
     
     .headline {
         grid-row: 1; //2
+        
+        //check all these again
+        padding-top:$header-padding-1; //ovde imam problema
         
         h1 {
             font-size: 3.5rem;

@@ -20,77 +20,49 @@
   grid-template-columns: repeat(3, 1fr);
   overflow: hidden;
 }
-.headline-grid .faces-1, .headline-grid .faces-2, .headline-grid .headline {
-  padding: 3.25rem 0;
-}
 .headline-grid .faces-1, .headline-grid .faces-2 {
   grid-row: 1;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4%;
+  height: fit-content;
 }
 .headline-grid .faces-1 .two-faces-component, .headline-grid .faces-2 .two-faces-component {
-  display: inline-block;
+  height: fit-content;
 }
 .headline-grid .faces-1 .two-faces-component .face, .headline-grid .faces-2 .two-faces-component .face {
-  width: 7rem;
-  height: 7rem;
+  width: 100%;
   border-radius: 50%;
 }
 .headline-grid .faces-1 .two-faces-component .face:first-child, .headline-grid .faces-2 .two-faces-component .face:first-child {
-  margin-bottom: 30px;
+  margin-bottom: 10%;
 }
 .headline-grid .faces-1 {
   grid-column: 1;
-  transform: translateX(-3rem);
+  transform: translateX(-10%);
 }
-.headline-grid .faces-1 .two-faces-component:first-child .face:first-child {
-  background: url("../../assets/avatars/1.jpg") no-repeat center center;
+.headline-grid .faces-1 .two-faces-component:nth-child(1) {
+  padding-top: 50%;
 }
-.headline-grid .faces-1 .two-faces-component:first-child .face:nth-child(2) {
-  background: url("../../assets/avatars/2.jpg") no-repeat center center;
-}
-.headline-grid .faces-1 .two-faces-component:nth-child(2) {
-  transform: translateY(-20%);
-}
-.headline-grid .faces-1 .two-faces-component:nth-child(2) .face:first-child {
-  background: url("../../assets/avatars/3.jpg") no-repeat center center;
-}
-.headline-grid .faces-1 .two-faces-component:nth-child(2) .face:nth-child(2) {
-  background: url("../../assets/avatars/4.jpg") no-repeat center center;
-}
-.headline-grid .faces-1 .two-faces-component:nth-child(3) .face:first-child {
-  background: url("../../assets/avatars/5.jpg") no-repeat center center;
-}
-.headline-grid .faces-1 .two-faces-component:nth-child(3) .face:nth-child(2) {
-  background: url("../../assets/avatars/6.jpg") no-repeat center center;
+.headline-grid .faces-1 .two-faces-component:nth-child(3) {
+  padding-top: 50%;
 }
 .headline-grid .faces-2 {
   grid-column: 3;
-  transform: translateX(3rem);
+  transform: translateX(10%);
 }
-.headline-grid .faces-2 .two-faces-component:first-child .face:first-child {
-  background: url("../../assets/avatars/7.jpg") no-repeat center center;
-}
-.headline-grid .faces-2 .two-faces-component:first-child .face:nth-child(2) {
-  background: url("../../assets/avatars/8.jpg") no-repeat center center;
+.headline-grid .faces-2 .two-faces-component:nth-child(1) {
+  padding-top: 50%;
 }
 .headline-grid .faces-2 .two-faces-component:nth-child(2) {
-  transform: translateY(20%);
+  padding-top: 100%;
 }
-.headline-grid .faces-2 .two-faces-component:nth-child(2) .face:first-child {
-  background: url("../../assets/avatars/9.jpg") no-repeat center center;
-}
-.headline-grid .faces-2 .two-faces-component:nth-child(2) .face:nth-child(2) {
-  background: url("../../assets/avatars/10.jpg") no-repeat center center;
-}
-.headline-grid .faces-2 .two-faces-component:nth-child(3) .face:first-child {
-  background: url("../../assets/avatars/11.jpeg") no-repeat center center;
-}
-.headline-grid .faces-2 .two-faces-component:nth-child(3) .face:nth-child(2) {
-  background: url("../../assets/avatars/12.jpg") no-repeat center center;
+.headline-grid .faces-2 .two-faces-component:nth-child(3) {
+  padding-top: 50%;
 }
 .headline-grid .headline {
   grid-row: 1;
+  padding-top: 50%;
 }
 .headline-grid .headline h1 {
   font-size: 3.5rem;
@@ -169,6 +141,7 @@ a[class^=btn][class$=-purple]:hover {
 
 .logo-container {
   padding: 5rem 0 0;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
