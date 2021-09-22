@@ -2,7 +2,10 @@
     display: grid;
     grid-template-columns: repeat(3,1fr); //2, 1fr
     //grid-template-rows: repeat(2,1fr);
+
+    border: 1px solid navy;
     overflow: hidden;
+    // padding-top: 5%;
     
     .faces-1, .faces-2 {
         grid-row: 1;
@@ -10,17 +13,19 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 4%;
-        height: fit-content;
-        // border: 1px solid red;
+        border: 1px solid red;
+        height: fit-content; //maybe you don't need this
         
         .two-faces-component {
-            height: fit-content; //maybe you don't need this
+            //height: fit-content; //maybe you don't need this
+            border:1px solid orange;
+
             .face {
                 width: 100%;
                 border-radius: 50%;
                 
                 &:first-child {
-                    margin-bottom: 10%;
+                    // margin-bottom: 10%;
                 }
             }
         }
@@ -30,26 +35,19 @@
         grid-column: 1;
         transform: translateX(-10%);
         
-        //check all these again
-        .two-faces-component:nth-child(1){padding-top:$header-padding-1;}
-        .two-faces-component:nth-child(3){padding-top:$header-padding-1;}
+        .two-faces-component:nth-child(2){transform: translateY(25%);}
     }
     
     .faces-2{
         grid-column: 3; //2
         transform: translateX(10%);
+        padding-bottom: 20%;
 
-        //check all these again
-        .two-faces-component:nth-child(1){padding-top:$header-padding-1;}
-        .two-faces-component:nth-child(2){padding-top:$header-padding-2;}
-        .two-faces-component:nth-child(3){padding-top:$header-padding-1;}
+        .two-faces-component:nth-child(2){transform: translateY(25%);}
     }
     
     .headline {
         grid-row: 1; //2
-        
-        //check all these again
-        padding-top:$header-padding-1; //ovde imam problema
         
         h1 {
             font-size: 3.5rem;
