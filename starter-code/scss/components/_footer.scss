@@ -2,14 +2,40 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 15rem;   
+    min-height: 15rem;   
     
     background-image: url('../assets/desktop/image-footer.jpg'); //fallback
     background-image: linear-gradient(#4d97a9d5, #4d97a9d5), url('../assets/desktop/image-footer.jpg'); //overlay image
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    > div {
+    h4, p,div {
         flex: 1;
+    }
+
+    h4 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        flex: 1;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .footer {
+        flex-direction: column;
+        padding: 2rem 0;
+
+        h4 {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
+        
+        p {
+            text-align: center;
+            padding-bottom: 1rem;
+        }
     }
 }

@@ -1,3 +1,23 @@
 .logo-container {
     padding: 5rem 0;
 }
+
+.info-section {
+    div:first-child span {
+        color: $color-dark-blue;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.25rem;
+    }
+
+    h3 {
+        color: $color-darker-purple;
+        font-size: 2.5rem;
+        font-weight: 700;
+    }
+
+    p {
+        color: $color-gray;
+    }
+}

@@ -4,6 +4,7 @@ a[class^='btn'] {
     border-radius: 100px;
     color: $color-white;
     text-decoration: none;
+    font-weight: 700;
 
     //blue button
     &[class$='-blue'] {

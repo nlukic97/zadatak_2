@@ -16,12 +16,12 @@ body {
 }
 
 .container {
-  padding: 0 5rem;
+  padding: 0 7rem;
 }
 
 @media screen and (max-width: 880px) {
   .container {
-    padding: 5%;
+    padding: 0 5%;
   }
 }
 .mtb-4 {
@@ -87,6 +87,9 @@ body {
   line-height: 4rem;
   margin-bottom: 1.5rem;
 }
+.headline-grid .headline p {
+  color: #87879d;
+}
 
 @media screen and (max-width: 880px) {
   .headline-grid {
@@ -109,7 +112,7 @@ body {
   .headline-grid .headline {
     grid-row: 2;
     grid-column: 1/3;
-    margin: 0 3rem;
+    padding: 0 3rem;
   }
   .headline-grid .headline h1 {
     margin-top: 3.5rem;
@@ -121,6 +124,7 @@ a[class^=btn] {
   border-radius: 100px;
   color: #fafafa;
   text-decoration: none;
+  font-weight: 700;
 }
 a[class^=btn][class$=-blue] {
   background-color: #4d96a9;
@@ -181,19 +185,56 @@ a[class^=btn][class$=-purple]:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 15rem;
+  min-height: 15rem;
   background-image: url("../assets/desktop/image-footer.jpg");
   background-image: linear-gradient(#4d97a9d5, #4d97a9d5), url("../assets/desktop/image-footer.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
 }
-.footer > div {
+.footer h4, .footer p, .footer div {
   flex: 1;
 }
+.footer h4 {
+  font-size: 2.5rem;
+}
+.footer p {
+  flex: 1;
+  font-size: 1.1rem;
+}
 
+@media screen and (max-width: 880px) {
+  .footer {
+    flex-direction: column;
+    padding: 2rem 0;
+  }
+  .footer h4 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .footer p {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
 .logo-container {
   padding: 5rem 0;
+}
+
+.info-section div:first-child span {
+  color: #4d96a9;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+}
+.info-section h3 {
+  color: #28283d;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.info-section p {
+  color: #87879d;
 }
 
 /*# sourceMappingURL=style.css.map */
