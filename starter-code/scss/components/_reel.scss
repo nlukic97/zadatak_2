@@ -2,8 +2,7 @@
     display: grid;
     grid-template-rows: 1;
     grid-template-columns: repeat(4,1fr);
-    // grid-template-rows: 2; //change this maybe
-    gap:20px; //change this
+    gap:2%;
 
     img {
         border-radius: 5px;
