@@ -199,7 +199,7 @@ a[class^=btn][class$=-purple]:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 15rem;
+  min-height: 18rem;
   background-image: url("../assets/desktop/image-footer.jpg");
   background-image: linear-gradient(#4d97a9d5, #4d97a9d5), url("../assets/desktop/image-footer.jpg");
   background-repeat: no-repeat;
@@ -222,6 +222,7 @@ a[class^=btn][class$=-purple]:hover {
     flex-direction: column;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    background-image: linear-gradient(#4d97a9d5, #4d97a9d5), url("../assets/tablet/image-footer.jpg");
   }
   .footer h4 {
     text-align: center;
@@ -230,6 +231,12 @@ a[class^=btn][class$=-purple]:hover {
   .footer p {
     text-align: center;
     padding-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer {
+    background-image: linear-gradient(#4d97a9d5, #4d97a9d5), url("../assets/mobile/image-footer.jpg");
+    min-height: 25rem;
   }
 }
 .logo-container {
