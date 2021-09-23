@@ -89,6 +89,7 @@ body {
 }
 .headline-grid .headline p {
   color: #87879d;
+  margin-bottom: 1.5rem;
 }
 
 @media screen and (max-width: 880px) {
@@ -120,6 +121,7 @@ body {
 }
 a[class^=btn] {
   padding: 1rem 2rem;
+  margin: 0.3rem;
   display: inline-block;
   border-radius: 100px;
   color: #fafafa;
@@ -129,14 +131,20 @@ a[class^=btn] {
 a[class^=btn][class$=-blue] {
   background-color: #4d96a9;
 }
+a[class^=btn][class$=-blue] span {
+  color: #8fe3f9;
+}
 a[class^=btn][class$=-blue]:hover {
-  background-color: #8fe3f9;
+  background-color: #71C0D4;
 }
 a[class^=btn][class$=-purple] {
   background-color: #855fb1;
 }
+a[class^=btn][class$=-purple] span {
+  color: #d9b8ff;
+}
 a[class^=btn][class$=-purple]:hover {
-  background-color: #d9b8ff;
+  background-color: #B18BDD;
 }
 
 .circle-line {
@@ -228,6 +236,9 @@ a[class^=btn][class$=-purple]:hover {
   padding: 5rem 0;
 }
 
+.info-section {
+  padding: 0 30%;
+}
 .info-section div:first-child span {
   color: #4d96a9;
   font-weight: 700;
@@ -239,9 +250,16 @@ a[class^=btn][class$=-purple]:hover {
   color: #28283d;
   font-size: 2.5rem;
   font-weight: 700;
+  line-height: 2.5rem;
 }
 .info-section p {
   color: #87879d;
+}
+
+@media screen and (max-width: 880px) {
+  .info-section {
+    padding: 0 5%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

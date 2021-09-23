@@ -3,6 +3,7 @@
 }
 
 .info-section {
+    padding: 0 30%;
     div:first-child span {
         color: $color-dark-blue;
         font-weight: 700;
@@ -15,9 +16,16 @@
         color: $color-darker-purple;
         font-size: 2.5rem;
         font-weight: 700;
+        line-height: 2.5rem;
     }
 
     p {
         color: $color-gray;
+    }
+}
+
+@media screen and (max-width:880px) {
+    .info-section {
+        padding: 0 5%;
     }
 }

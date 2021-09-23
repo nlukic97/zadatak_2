@@ -1,5 +1,6 @@
 a[class^='btn'] {
     padding:1rem 2rem;
+    margin: 0.3rem;
     display: inline-block;
     border-radius: 100px;
     color: $color-white;
@@ -9,6 +10,9 @@ a[class^='btn'] {
     //blue button
     &[class$='-blue'] {
         background-color: $color-dark-blue;
+        span {
+            color: $color-blue-span;
+        }
         
         &:hover {
             background-color: $color-light-blue;
@@ -18,6 +22,9 @@ a[class^='btn'] {
     //purple button
     &[class$='-purple'] {
         background-color: $color-dark-purple;
+        span {
+            color: $color-purple-span;
+        }
 
         &:hover {
             background-color: $color-light-purple;
