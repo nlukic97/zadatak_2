@@ -22,29 +22,3 @@
         font-size: 1.1rem;
     }
 }
-
-@media screen and (max-width:880px) {
-    .footer {
-        flex-direction: column;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        background-image: linear-gradient(#4d97a9d5, #4d97a9d5), url('../assets/tablet/image-footer.jpg'); //overlay image
-        
-        h4 {
-            text-align: center;
-            padding-bottom: 1rem;
-        }
-        
-        p {
-            text-align: center;
-            padding-bottom: 1rem;
-        }
-    }
-}
-
-@media screen and (max-width:480px) {
-    .footer {
-        background-image: linear-gradient(#4d97a9d5, #4d97a9d5), url('../assets/mobile/image-footer.jpg'); //overlay image
-        min-height: 25rem; 
-    }
-}

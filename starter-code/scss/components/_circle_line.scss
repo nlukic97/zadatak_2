@@ -17,9 +17,8 @@
         width: 1px;
         height: 4rem;
         position: absolute;
-        // top: -4rem;
-        top: -135%; //more accurate than -4rem
-        left: calc(50% - 0.5px); //check out how this could be done better
+        top: -135%;
+        left: calc(50% - 0.5px);
     }
 
     &::after {
