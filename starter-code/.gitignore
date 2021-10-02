@@ -15,7 +15,5 @@
 .DS_Store
 .prettierignore
 
-node_modules/
-
 # Compile css files in production - not working
-#css/
+css/

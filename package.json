@@ -1,0 +1,16 @@
+{
+  "name": "starter-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass starter-code/scss/main.scss starter-code/css/style.css -w",
+    "compile:sass-once": "sass starter-code/scss/main.scss starter-code/css/style.css",
+    "build":"npm install && npm run compile:sass-once"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.41.1"
+  }
+}
