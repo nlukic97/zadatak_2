@@ -17,5 +17,5 @@
 
 node_modules/
 
-# Compile css files in production
-css/
+# Compile css files in production - not working
+#css/
