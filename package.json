@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "sass starter-code/scss/main.scss starter-code/css/style.css -w",
-    "compile:sass-once": "sass starter-code/scss/main.scss starter-code/css/style.css",
-    "build":"npm install && npm run compile:sass-once"
+    "compile:sass-once": "sass starter-code/scss/main.scss starter-code/css/style.css"
   },
   "author": "",
   "license": "ISC",
