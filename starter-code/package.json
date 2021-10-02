@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build":"npm run install_modules && npm run compile:sass-once",
+    "install_modules":"npm install",
     "compile:sass": "sass scss/main.scss css/style.css -w",
     "compile:sass-once":"sass scss/main.scss css/style.css"
   },
