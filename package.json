@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass starter-code/scss/main.scss starter-code/css/style.css -w",
-    "compile:sass-once": "sass starter-code/scss/main.scss starter-code/css/style.css"
+    "compile:sass": "sass public/scss/main.scss public/css/style.css -w",
+    "compile:sass-once": "sass public/scss/main.scss public/css/style.css"
   },
   "author": "",
   "license": "ISC",
