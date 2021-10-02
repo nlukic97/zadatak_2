@@ -25,6 +25,12 @@
         content: attr(data-number);
         color: $color-gray;
         font-weight: 700;
+
+        //Center the number in the circle
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
