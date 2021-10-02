@@ -16,4 +16,6 @@
 .prettierignore
 
 node_modules/
+
+# Compile css files in production
 css/
